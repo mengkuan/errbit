@@ -14,7 +14,7 @@ class BacktraceLine
   delegate :app, :to => :backtrace
 
   def to_s
-    "#{file}:#{number}"
+    "#{file}:#{number}:#{method}"
   end
 
   def in_app?
